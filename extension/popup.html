@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <style>
+    :root {
+      --darkgray: #414141;
+      --blueishWhite: #dee8f0;
+      --lighter: #d6e4f0;
+      --accent: #1e56a0;
+    }
+    * {
+      border-radius: 5px;
+      background-color: var(--darkgray);
+      color: var(--blueishWhite);
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome, Edge, Opera and Firefox */
+    }
+    body {
+      font-family: Monospace, Arial, Helvetica, sans-serif;
+      width: 150px;
+    }
+    label {
+      display: block;
+      width: 100%;
+    }
+    button {
+      width: 50%;
+      margin: 15%;
+      margin-left: 25%;
+      padding: 5px;
+      text-align: center;
+      background-color: var(--accent);
+      border: none;
+    }
+    .lblAppStateCotainer {
+      display: inline;
+      width: 100%;
+    }
+    .appRunning {
+      color: green;
+    }
+    .appNotRunning {
+      color: red;
+    }
+    table {
+      font-size: x-small;
+      /*display: block;*/
+      text-align: center;
+      width: 100%;
+    }
+    input[type="checkbox"] {
+      width: auto;
+      vertical-align: middle;
+
+      background-color: var(--background);
+      border: 2px solid var(--accent);
+      border-radius: 5px;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      position: relative;
+    }
+    input[type="checkbox"]:checked {
+      background-color: var(--accent);
+    }
+    .cbContainer {
+      display: none;
+    }
+  </style>
+  <body>
+    <h1 style="text-align: center">mao</h1>
+    <label class="lblAppStateCotainer"
+      >status:
+      <label for="" id="lblAppState" class="lblAppStateCotainer appNotRunning"
+        >inaktiv</label
+      ></label
+    >
+    <label class="cbContainer">
+      <input type="checkbox" name="" id="cbMicro" value="microphone" />
+      Mikrofon
+    </label>
+    <label class="cbContainer">
+      <input type="checkbox" name="" id="cbCam" value="camera" />
+      Kamera
+    </label>
+    <label class="cbContainer">
+      <input type="checkbox" name="" id="cbShare" value="screenshare" />
+      Bildschirm
+    </label>
+
+    <button id="bttnToggle">start</button>
+    <table>
+      <tr>
+        <td><label for="">v0.1</label></td>
+        <td>
+          <a href="https://github.com/KlnSdr/bbb_mao">GitHub</a>
+        </td>
+      </tr>
+    </table>
+    <script src="index.js"></script>
+  </body>
+</html>

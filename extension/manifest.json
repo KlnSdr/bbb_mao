@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "bbb_mao",
+  "version": "0.1",
+  "description": "make sure the microphone is allways turned on",
+  "icons": {
+    "512": "icons/icon512.png",
+    "256": "icons/icon256.png",
+    "128": "icons/icon128.png",
+    "64": "icons/icon64.png",
+    "32": "icons/icon32.png",
+    "16": "icons/icon16.png"
+  },
+  "permissions": ["activeTab", "storage"],
+  "browser_action": {
+    "default_icon": "icons/icon32.png",
+    "default_title": "mao",
+    "default_popup": "popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "fsy95967@uooos.com"
+    }
+  }
+}
