@@ -1,7 +1,3 @@
-// (function () {
-//     window.location.assign('https://www.nytimes.com/games/wordle/index.html');
-// })();
-
 (function () {
   /**
    * Check and set a global guard variable.
