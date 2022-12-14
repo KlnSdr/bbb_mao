@@ -7,7 +7,7 @@ A simple Firefox extension which checks if you are muted in BigBlueButton and cl
 
 bbb_mao runs a check every second to ensure that you can always be heard and no information is lost.
 
-[add to Firefox](https://raw.githubusercontent.com/klnsdr/bbb_mao/main/extension/bbb_mao-0.1.xpi)
+[add to Firefox](https://raw.githubusercontent.com/klnsdr/bbb_mao/main/extension/bbb_mao-0.1.1.xpi)
 
 ---
 <a href="https://www.flaticon.com/free-icons/voice" title="voice icons">icon based on voice icons created by surang - Flaticon</a>
