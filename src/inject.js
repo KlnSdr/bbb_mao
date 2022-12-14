@@ -19,12 +19,26 @@
   };
 
   const stateIDElementIDMapping = {
-    microphone: "tippy-40",
+    microphone: "",
     /*
     camera: "bttnCam",
     screenshare: "bttnScreen",
     */
   };
+
+  // get id of mute/unmute button
+  let bttnArray = Array.from(
+    document.querySelectorAll('[aria-label="Unmute"], [aria-label="Mute"]')
+  );
+
+  if (bttnArray.length === 0) {
+    throw "mute/unmute button is not existing";
+  } else {
+    stateIDElementIDMapping["microphone"] = bttnArray[0].id;
+    console.log("id lock");
+    console.log(stateIDElementIDMapping["microphone"]);
+  }
+  // get id of mute/unmute button
 
   const elementIDStateClassesMapping = {
     microphone: { enabled: "Mute", disabled: "Unmute" },
@@ -50,6 +64,10 @@
           button.click();
         }
       } else {
+        console.log(stateIDElementIDMapping["microphone"]);
+        console.log(
+          document.getElementById(stateIDElementIDMapping["microphone"])
+        );
         console.log("button not present");
       }
     });
